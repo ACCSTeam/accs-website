@@ -1,12 +1,7 @@
-import React from "react"
-import "normalize.css"
-import { darkTheme } from "./src/theme"
-import { ThemeProvider } from "@fluentui/react"
+/**
+ * Implement Gatsby's Browser APIs in this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/browser-apis/
+ */
 
-export const wrapRootElement = ({ element }) => (
-  <>
-    <ThemeProvider applyTo="body" theme={darkTheme}>
-      {element}
-    </ThemeProvider>
-  </>
-)
+// You can delete this file if you're not using it

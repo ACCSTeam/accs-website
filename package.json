@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fluentui/merge-styles": "^8.1.3",
     "@fluentui/react": "^8.26.0",
     "gatsby": "^3.10.2",
     "gatsby-plugin-gatsby-cloud": "^2.10.0",

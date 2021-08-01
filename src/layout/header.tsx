@@ -11,13 +11,15 @@ interface IProps {
 const Header = ({ siteTitle = "" }: IProps) => (
   <header>
     <Stack
-      padding={20}
+      tokens={{ padding: 20 }}
       horizontalAlign="space-between"
       verticalAlign="center"
       horizontal
     >
-      <Stack verticalAlign="center" gap={10} horizontal>
+      <Stack verticalAlign="center" tokens={{ childrenGap: 20 }} horizontal>
         <StaticImage
+          placeholder="blurred"
+          layout="fixed"
           objectFit="contain"
           height={40}
           src="../images/ac-logo.png"

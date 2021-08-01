@@ -1,7 +1,15 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/ssr-apis/
- */
+import { Stylesheet, InjectionMode } from "@fluentui/merge-styles"
+import React from "react"
 
-// You can delete this file if you're not using it
+export const replaceRenderer = ({ setHeadComponents }) => {
+  const stylesheet = Stylesheet.getInstance()
+
+  stylesheet.setConfig({
+    injectionMode: InjectionMode.none,
+    namespace: "server",
+  })
+
+  setHeadComponents([
+    <style dangerouslySetInnerHTML={{ __html: stylesheet.getRules(true) }} />,
+  ])
+}
