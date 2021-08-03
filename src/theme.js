@@ -25,7 +25,7 @@ export const darkTheme = createTheme({
     neutralPrimaryAlt: "#dadada",
     neutralPrimary: "#ffffff",
     neutralDark: "#f4f4f4",
-    black: "#f8f8f8",
+    black: "#ffffff",
     white: "#000000",
   },
 })

@@ -5,6 +5,7 @@ import "../styles/global.css"
 import Header from "./header"
 import { ThemeProvider } from "@fluentui/react"
 import { darkTheme } from "../theme"
+import { initializeIcons } from '@fluentui/react/lib/Icons';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -16,7 +17,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  initializeIcons()
   return (
     <ThemeProvider applyTo="element" theme={darkTheme}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
