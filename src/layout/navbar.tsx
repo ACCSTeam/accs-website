@@ -2,7 +2,6 @@ import * as React from 'react';
 import { CommandBar, ICommandBarItemProps } from '@fluentui/react/lib/CommandBar';
 // @ts-ignore
 import * as classes from "./layout.module.css"
-import { navigate } from "gatsby"
 
 export const NavBar: React.FunctionComponent = () => {
   return (
@@ -16,12 +15,6 @@ export const NavBar: React.FunctionComponent = () => {
 };
 
 const _items: ICommandBarItemProps[] = [
-  {
-    key: 'home',
-    text: 'Home',
-    iconProps: { iconName: 'Home' },
-    onClick: () => {navigate("/")},
-  },
   {
     key: 'download',
     text: 'Download',

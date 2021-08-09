@@ -1,0 +1,18 @@
+.root{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.downloadButton{
+    font-size: 24px;
+    padding: 40px 60px;
+}
+
+.description{
+    max-width: 1024px;
+    text-align: center;
+    font-size: 32px;
+}

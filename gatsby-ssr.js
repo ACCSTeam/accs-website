@@ -6,7 +6,7 @@ export const replaceRenderer = ({ setHeadComponents }) => {
 
   stylesheet.setConfig({
     injectionMode: InjectionMode.none,
-    namespace: "server",
+    namespace: "",
   })
 
   setHeadComponents([
