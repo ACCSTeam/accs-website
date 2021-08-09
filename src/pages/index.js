@@ -17,7 +17,7 @@ const IndexPage = () => (
         src="../images/ac-logo.png"
         alt="Logo"
       />
-      <p className={classes.description}><strong>Content Synchronizer</strong> - Asetto Corsa launcher and utility for synchronizing content between the server and client</p>
+      <p className={classes.description}><strong>Content Synchronizer</strong> - <em>Assetto Corsa</em> launcher and utility for synchronizing content between the server and client</p>
       <PrimaryButton href="https://github.com/ACCSTeam/ACContentSynchronizer/releases/latest" className={classes.downloadButton}><FontIcon iconName="Download" /> Download</PrimaryButton>
     </div>
   </Layout>
